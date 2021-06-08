@@ -1,6 +1,6 @@
 # despicable_me_app
 
-A new Flutter project.
+Shows animation characters with their desctriptions 
 
 ## Getting Started
 

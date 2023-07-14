@@ -9,7 +9,8 @@ class CharacterDetailScreen extends StatefulWidget {
   final double _completeCollapsedBottomSheetBottomPosition = -330;
   final Character character;
 
-  const CharacterDetailScreen({Key key, this.character}) : super(key: key);
+  const CharacterDetailScreen({Key? key, required this.character})
+      : super(key: key);
 
   @override
   _CharacterDetailScreenState createState() => _CharacterDetailScreenState();
@@ -184,7 +185,7 @@ class _CharacterDetailScreenState extends State<CharacterDetailScreen>
       _bottomSheetBottomPosition = isCollapsed
           ? widget._expandedBottomSheetBottomPosition
           : widget._collapsedBottomSheetBottomPosition;
-          isCollapsed = !isCollapsed;
+      isCollapsed = !isCollapsed;
     });
   }
 

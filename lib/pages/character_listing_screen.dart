@@ -9,7 +9,7 @@ class CharacterListingScreen extends StatefulWidget {
 }
 
 class _CharacterListingScreenState extends State<CharacterListingScreen> {
-  PageController _pageController;
+  late PageController _pageController;
   int currentPage = 0;
 
   @override

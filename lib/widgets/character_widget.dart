@@ -9,7 +9,10 @@ class CharacterWidget extends StatelessWidget {
   final int currentPage;
 
   const CharacterWidget(
-      {Key key, this.character, this.pageController, this.currentPage})
+      {Key? key,
+      required this.character,
+      required this.pageController,
+      required this.currentPage})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -30,7 +33,7 @@ class CharacterWidget extends StatelessWidget {
         builder: (context, child) {
           double value = 1;
           if (pageController.position.haveDimensions) {
-            value = pageController.page - currentPage;
+            // value = pageController.page - currentPage;
             value = (1 - (value.abs() * 0.6)).clamp(0.00, 1.0);
           }
           return Stack(

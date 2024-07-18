@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(
           elevation: 0,
           color: Colors.white,
-        ),
+        ),//update
       ),
       home: CharacterListingScreen(),
     );
